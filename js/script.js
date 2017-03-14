@@ -14,6 +14,10 @@ function loadData() {
     // load streetview
 
     // YOUR CODE GOES HERE!
+    var streetStr = $('#street').val();
+    var cityStr =  $('#city').val();
+    var address = streetStr + ', ' + cityStr;
+    $body.append('<img class="bgimg" src="https://maps.googleapis.com/maps/api/streetview?location="'+$street+', '+$city+'>');
 
     return false;
 };
